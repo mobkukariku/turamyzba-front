@@ -8,8 +8,11 @@ import { IoIosSearch } from "react-icons/io";
 import { Button } from "@/ui/button";
 import { FaRegUser } from "react-icons/fa";
 
+interface HeaderProps {
+    isInputVisible?: boolean
+}
 
-export const Header: FC = () => {
+export const Header: FC<HeaderProps> = ({ isInputVisible = true}) => {
     return (
         <Container>
             <header className="flex justify-between px-5 items-center pt-5">
@@ -19,10 +22,13 @@ export const Header: FC = () => {
                         TURAMYZBA
                     </div>
                 </Link>
-                <div className="flex">
-                    <Input placeholder="Поиск сожителя c помощью ИИ"  variant="primary" type="text" className="rounded-l-lg"/>
-                    <Button variant="withIcon" className="rounded-r-lg"><IoIosSearch size={25} /></Button>
-                </div>
+               {
+                isInputVisible 
+                ? <div className="flex">
+                <Input placeholder="Поиск сожителя c помощью ИИ"  variant="primary" type="text" className="rounded-l-lg"/>
+                <Button variant="withIcon" className="rounded-r-lg"><IoIosSearch size={25} /></Button>
+            </div> : null
+               }
                 <div>
                     <Button variant="withIcon">
                         <Link href="/login">
