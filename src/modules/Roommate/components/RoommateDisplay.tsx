@@ -1,7 +1,7 @@
 'use client'
 
-import { Skeleton } from 'antd'
 import { useState } from 'react'
+import Skeleton from 'react-loading-skeleton'
 import { roommates } from '../data'
 import { useViewStore } from '../stores/useViewStore'
 import { RoommateCard } from './RoommateCard'
