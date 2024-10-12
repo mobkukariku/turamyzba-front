@@ -1,3 +1,10 @@
+import { Header, RoommateDisplay } from '@/modules/Roommate'
+
 export default function Home() {
-	return <>{/* Here was header */}</>
+	return (
+		<>
+			<Header />
+			<RoommateDisplay />
+		</>
+	)
 }
