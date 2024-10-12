@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-const CreateAnnouncementButton = () => {
+export const CreateAnnouncementButton = () => {
 	return (
 		<div>
 			<nav className='max-w-[1200px] px-[20px] mx-[auto] items-center flex justify-between mt-[50px] gap-2 mb-[60px]'>

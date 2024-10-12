@@ -13,7 +13,7 @@ interface Place {
 	monthlyExpensePerPerson: number
 }
 
-const DisplayAnnouncement = () => {
+export const DisplayAnnouncement = () => {
 	const { activeTab } = useTabStore()
 	const [loading, setLoading] = useState(false)
 	const [places, setPlaces] = useState<Place[]>([])

@@ -2,7 +2,7 @@
 
 import { useTabStore } from '../stores/TabStore'
 
-const FindroommateFilter = () => {
+export const FindroommateFilter = () => {
 	const { activeTab, setActiveTab } = useTabStore()
 	return (
 		<div>

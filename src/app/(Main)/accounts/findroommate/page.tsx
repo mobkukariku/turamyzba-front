@@ -1,9 +1,11 @@
 'use client'
 
-import CreateAnnouncementButton from '@/modules/Account/components/CreateAnnouncementButton'
-import DisplayAnnouncement from '@/modules/Account/components/DisplayAnnouncement'
-import FindroommateFilter from '@/modules/Account/components/FindroommateFilter'
-import FindroommateNavbar from '@/modules/Account/components/FindroommateNavbar'
+import {
+	CreateAnnouncementButton,
+	DisplayAnnouncement,
+	FindroommateFilter,
+	FindroommateNavbar,
+} from '@/modules/Account'
 
 const AccountsFindroommate = () => {
 	return (
