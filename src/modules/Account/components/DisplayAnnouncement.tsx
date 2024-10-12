@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import room from '../../../../public/assets/i.webp'
-import { useTabStore } from '../stores/TabStore'
+import { useTabStore } from '../stores/useTabStore'
 
 interface Place {
 	_id: number

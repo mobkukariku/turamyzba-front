@@ -27,7 +27,7 @@ export const Header: FC<HeaderProps> = ({ isInputVisible = true}) => {
                 ? <div className="flex">
                 <Input placeholder="Поиск сожителя c помощью ИИ"  variant="primary" type="text" className="rounded-l-lg"/>
                 <Button variant="withIcon" className="rounded-r-lg"><IoIosSearch size={25} /></Button>
-            </div> : null
+            </div> : <></>
                }
                 <div>
                     <Button variant="withIcon">

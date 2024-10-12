@@ -1,6 +1,6 @@
 'use client'
 
-import { useTabStore } from '../stores/TabStore'
+import { useTabStore } from '../stores/useTabStore'
 
 export const FindroommateFilter = () => {
 	const { activeTab, setActiveTab } = useTabStore()
