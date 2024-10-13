@@ -2,12 +2,13 @@ import { FC } from "react";
 import clsx from "clsx";
 
 interface ButtonProps {
-    variant?: "withIcon" | "primary"
-    onClick?: () => void
-    children?: React.ReactNode
-    disabled?: boolean
-    icon?: React.ReactNode
-    className?: string
+    variant?: "withIcon" | "primary";
+    onClick?: () => void;
+    children?: React.ReactNode;
+    disabled?: boolean;
+    icon?: React.ReactNode;
+    className?: string;
+    type?: "button" | "submit" | "reset"
 }
 
 export const Button:FC<ButtonProps> = ({
@@ -16,7 +17,8 @@ export const Button:FC<ButtonProps> = ({
     onClick,
     disabled,
     icon,
-    className
+    className,
+    type
 }) => {
 
     const buttonClasses = clsx(
@@ -28,7 +30,7 @@ export const Button:FC<ButtonProps> = ({
       );
 
     return (
-       <button onClick={onClick} disabled={disabled} className={`${buttonClasses} ${className}`} >
+       <button onClick={onClick} disabled={disabled} className={`${buttonClasses} ${className}`} type={type} >
            {icon}
            {children}
        </button>
